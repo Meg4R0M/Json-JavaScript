@@ -45,7 +45,7 @@
         for (var i = 0; i < count; i++) {
                 var object = obj.stagiaires[i];
                 // on ajoute au tableaux les personnes
-                gens.push("<li>"+object.prenom + " " + object.nom + "</li>");
+                gens.push("<li>"+object.nom + " " + object.prenom + "</li>");
         }
         // On trie et retire les virgules
         var result = gens.sort(function(a, b) { return a.localeCompare(b); }).join("");
